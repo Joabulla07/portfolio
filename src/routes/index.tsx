@@ -26,7 +26,7 @@ const projects: Project[] = [
   { title: "Exam Generator", img: examImg, href: "/exam-generator", internal: true, tag: "Python · PySide6" },
   { title: "League of Coaching", img: leagueImg, href: "https://league-of-coaching.netlify.app", tag: "Web app" },
   { title: "Gestión de Turnos Online", img: gh("gestion.jpg"), href: "https://gestionarreactapptp2.netlify.app/", tag: "Web app" },
-  { title: "Web Page Delivery", img: mascoteroImg, href: "https://delivery-mascotero.netlify.app/", tag: "Web app" },
+  { title: "Web Page Delivery", img: mascoteroImg, href: "https://delivery-mascotero.onrender.com/", tag: "Web app" },
   { title: "Web Page Peliculas", img: pelisImg, href: "https://peliculas-react-2025.netlify.app", tag: "Web app" },
 ];
 
