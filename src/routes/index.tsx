@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Download, Github, Mail, Phone } from "lucide-react";
 import examImg from "@/assets/exam_generator.jpg";
-import leagueImg from "@/assets/league-of-coaching.png.asset.json";
+import leagueImg from "@/assets/league-of-coaching.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,7 +22,7 @@ const gh = (f: string) => `https://github.com/Joabulla07/Proyecto2020-Python/blo
 type Project = { title: string; img: string; href: string; internal?: boolean; tag: string; wip?: boolean };
 const projects: Project[] = [
   { title: "Exam Generator", img: examImg, href: "/exam-generator", internal: true, tag: "Python · PySide6" },
-  { title: "League of Coaching", img: leagueImg.url, href: "https://league-of-coaching.netlify.app", tag: "Web app" },
+  { title: "League of Coaching", img: leagueImg, href: "https://league-of-coaching.netlify.app", tag: "Web app" },
   { title: "Gestión de Turnos Online", img: gh("gestion.jpg"), href: "https://gestionarreactapptp2.netlify.app/", tag: "Web app" },
 ];
 
