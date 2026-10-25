@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Download, Github, Mail, Phone } from "lucide-react";
 import examImg from "@/assets/exam_generator.jpg";
 import leagueImg from "@/assets/league-of-coaching.png";
+import mascoteroImg from "@/assets/mascotero.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,6 +25,7 @@ const projects: Project[] = [
   { title: "Exam Generator", img: examImg, href: "/exam-generator", internal: true, tag: "Python · PySide6" },
   { title: "League of Coaching", img: leagueImg, href: "https://league-of-coaching.netlify.app", tag: "Web app" },
   { title: "Gestión de Turnos Online", img: gh("gestion.jpg"), href: "https://gestionarreactapptp2.netlify.app/", tag: "Web app" },
+  { title: "Web Page Delivery", img: mascoteroImg, href: "https://delivery-mascotero.netlify.app/", tag: "Web app" },
 ];
 
 function ProjectCard({ p, i }: { p: Project; i: number }) {
