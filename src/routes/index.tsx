@@ -3,6 +3,7 @@ import { ArrowUpRight, Download, Github, Mail, Phone } from "lucide-react";
 import examImg from "@/assets/exam_generator.jpg";
 import leagueImg from "@/assets/league-of-coaching.png";
 import mascoteroImg from "@/assets/mascotero.png";
+import pelisImg from "@/assets/pelis.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,6 +27,7 @@ const projects: Project[] = [
   { title: "League of Coaching", img: leagueImg, href: "https://league-of-coaching.netlify.app", tag: "Web app" },
   { title: "Gestión de Turnos Online", img: gh("gestion.jpg"), href: "https://gestionarreactapptp2.netlify.app/", tag: "Web app" },
   { title: "Web Page Delivery", img: mascoteroImg, href: "https://delivery-mascotero.netlify.app/", tag: "Web app" },
+  { title: "Web Page Peliculas", img: pelisImg, href: "https://peliculas-react-2025.netlify.app", tag: "Web app" },
 ];
 
 function ProjectCard({ p, i }: { p: Project; i: number }) {
