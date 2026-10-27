@@ -65,6 +65,7 @@ function Index() {
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground">About</a>
             <a href="#work" className="hover:text-foreground">Work</a>
+            <a href="#servicios" className="hover:text-foreground">Servicios</a>
             <a href="#contact" className="hover:text-foreground">Contact</a>
           </div>
         </nav>
@@ -100,6 +101,36 @@ function Index() {
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => <ProjectCard key={p.title} p={p} i={i} />)}
+        </div>
+      </section>
+
+      <section id="servicios" className="mx-auto max-w-6xl px-6 py-28">
+        <div className="mb-12 flex items-end justify-between gap-6">
+          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Servicios</h2>
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="border rounded-lg p-6 hover:border-primary/50 transition flex flex-col h-100">
+            <div className="mb-4 flex items-start">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-col">
+                <span className="text-primary text-lg">📄</span>
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Desarrollo de páginas estáticas</h3>
+            <p className="text-muted-foreground flex-1">
+              Se realizan desarrollos de páginas estáticas, es decir, páginas promocionales sin secciones de inicio de sesión y guardado de información. Únicamente promocionales. Se entrega el desarrollo tanto código como página desplegada. Se pueden hacer mantenimientos también. Se cotiza la compra de dominios (los cuales se renuevan anualmente).
+            </p>
+          </div>
+          <div className="border rounded-lg p-6 hover:border-primary/50 transition flex flex-col h-100">
+            <div className="mb-4 flex items-start">
+              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-col">
+                <span className="text-primary text-lg">📦</span>
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold mb-2">Desarrollo de aplicaciones en GitHub</h3>
+            <p className="text-muted-foreground flex-1">
+              Se realizan desarrollos de aplicaciones en GitHub. Solo el código para que luego deployes o entregues. Tanto para quienes están aprendiendo programación y necesitan un proyecto como para quienes quieren el código para revender luego. Desarrollos backend. Te entrego el código o me pasas un GitHub para subirte el código en tu repositorio propio. Confidencialidad total y costos accesibles dependiendo tus requerimientos.
+            </p>
+          </div>
         </div>
       </section>
 
