@@ -115,7 +115,7 @@ function Index() {
                 <span className="text-primary text-lg">📄</span>
               </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2">Static Page Development</h3>
+            <h3 className="text-2xl font-bold mb-2 bg-primary/10 p-3 rounded text-primary">Static Page Development</h3>
             <p className="text-muted-foreground flex-1">
               Promotional pages without login or data storage sections. Only promotional. Code and deployed page delivered. Maintenance available. Domain purchases cotized (annual renewal).
             </p>
@@ -126,9 +126,9 @@ function Index() {
                 <span className="text-primary text-lg">📦</span>
               </div>
             </div>
-            <h3 className="text-2xl font-bold mb-2">GitHub Application Development</h3>
-            <p className="text-muted-foreground flex-1">
-              Backend code delivery for you to deploy or submit. For learners needing a project or those wanting code to resell. Total confidentiality. Accessible costs based on your requirements.
+            <h3 className="text-2xl font-bold mb-2 bg-primary/10 p-3 rounded text-primary">GitHub Application Development</h3>
+            <p className="text-primary flex-1">
+              Backend code delivery for you to deploy or submit. For learners needing a project or those wanting code to resell. I can upload the code to your personal GitHub or send it via files. Total confidentiality. Accessible costs based on your requirements.
             </p>
           </div>
         </div>
