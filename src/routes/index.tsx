@@ -14,6 +14,15 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Selected projects, resume and contact of backend developer Joanna Bulla." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        "script:ld+json": {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Joanna Bulla",
+          alternateName: ["Joanna Bulla Portfolio", "Joanna Bulla — Backend"],
+          url: "https://joab-portfolio-two.vercel.app/",
+        },
+      },
     ],
     links: [
       { rel: "canonical", href: "https://joab-portfolio-two.vercel.app/" },
