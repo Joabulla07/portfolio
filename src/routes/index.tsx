@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowUpRight, Download, File, Github, Mail, Phone } from "lucide-react";
+import { ArrowUpRight, Download, Github, Mail, Phone } from "lucide-react";
 import examImg from "@/assets/exam_generator.jpg";
 import leagueImg from "@/assets/league-of-coaching.png";
 import mascoteroImg from "@/assets/mascotero.png";
@@ -77,7 +77,6 @@ function Index() {
           <div className="flex gap-6 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground">About</a>
             <a href="#work" className="hover:text-foreground">Work</a>
-            <a href="#services" className="hover:text-foreground">Services</a>
             <a href="#contact" className="hover:text-foreground">Contact</a>
           </div>
         </nav>
@@ -113,36 +112,6 @@ function Index() {
         </div>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p, i) => <ProjectCard key={p.title} p={p} i={i} />)}
-        </div>
-      </section>
-
-      <section id="services" className="mx-auto max-w-6xl px-6 py-28">
-        <div className="mb-12 flex items-end justify-between gap-6">
-          <h2 className="text-4xl font-bold tracking-tight md:text-5xl">Services</h2>
-        </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="border rounded-lg p-6 hover:border-primary/50 transition flex flex-col h-100">
-            <div className="mb-4 flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-col">
-                <File className="h-6 w-6 text-primary" />
-              </div>
-            </div>
-            <h3 className="text-2xl font-bold mb-2 bg-primary/10 p-3 rounded text-primary">Static Page Development</h3>
-            <p className="text-white flex-1">
-              Promotional pages without login or data storage sections. Only promotional. Code and deployed page delivered. Maintenance available. Domain purchases cotized (annual renewal).
-            </p>
-          </div>
-          <div className="border rounded-lg p-6 hover:border-primary/50 transition flex flex-col h-100">
-            <div className="mb-4 flex items-start">
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-col">
-                <Github className="h-6 w-6 text-primary" />
-              </div>
-            </div>
-            <h3 className="text-2xl font-bold mb-2 bg-primary/10 p-3 rounded text-primary">GitHub Application Development</h3>
-            <p className="text-white flex-1">
-              Backend code delivery for you to deploy or submit. For learners needing a project or those wanting code to resell. I can upload the code to your personal GitHub or send it via files. Total confidentiality. Accessible costs based on your requirements.
-            </p>
-          </div>
         </div>
       </section>
 
